@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE window PUBLIC "-//MOZILLA//DTD XUL V1.0//EN"
+          "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://allevet/skin/frame.css" type="text/css"?>
+
+<window id="allevetFrame"
+        title="(allevet hidden frame)"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <panel id="panel" noautohide="true" noautofocus="true">
+        <vbox id="container">
+            <!-- An item looks like this:
+            
+            <box class="item">
+                <hbox class="itemBox">
+                    <image class="image"/>
+                    <vbox class="textBlock">
+                        <description class="title" crop="end" value="#text"/>
+                        <description class="text">#text</description>
+                    </vbox>
+                </hbox>
+            </box>
+            
+              -->
+        </vbox>
+    </panel>
+
+    <!-- This panel exists so that it can be an anchor for the real panel to be
+       - relative to; this ensures that when the other panel resizes it will be
+       - aligned to the bottom of the screen, rather than keeping the top level.
+      -->
+    <panel id="anchor" noautohide="true" noautofocus="true"/>
+
+</window>

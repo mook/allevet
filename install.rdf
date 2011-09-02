@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>allevet@instantbird.extensions.mook.wordpress.com</em:id>
+        <em:name>allevet</em:name>
+        <em:version>0.0.0.20110827</em:version>
+        <em:description>nsIAlertService replacement to better handle multiple simultaneous alerts</em:description>
+        <em:creator>Mook</em:creator>
+        <em:homepageURL>https://github.com/mook/allevet</em:homepageURL>
+        <em:type>2</em:type> <!-- type=extension -->
+        <!--
+        Need Gecko 8 to register chrome:// at runtime, which is needed to load a
+        victim XUL file
+        <em:bootstrap>true</em:bootstrap>
+        -->
+
+        <em:targetApplication>
+           <!-- Instantbird -->
+           <Description>
+                <em:id>{33cb9019-c295-46dd-be21-8c4936574bee}</em:id>
+                <em:minVersion>1.0.*</em:minVersion>
+                <em:maxVersion>1.1</em:maxVersion>
+           </Description>
+        </em:targetApplication>
+
+        <em:targetApplication>
+           <Description>
+                <em:id>toolkit@mozilla.org</em:id>
+                <em:minVersion>1.9.2</em:minVersion>
+                <em:maxVersion>7.*</em:maxVersion>
+           </Description>
+        </em:targetApplication>
+    </Description>
+</RDF>

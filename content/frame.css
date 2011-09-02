@@ -1,0 +1,53 @@
+
+/* The main popup panel (Aero appearance only) */
+@media screen and (-moz-windows-compositor) {
+    #panel {
+        -moz-appearance: -moz-win-glass;
+        padding: 4px;
+    }
+}
+
+/* The overall container for an item */
+.item {
+    overflow-y: hidden;
+    -moz-transition-property: height;
+    -moz-transition-duration: 1s;
+    height: 0;
+    background: menu;
+    margin: 2px;
+    -moz-border-radius: 4px;
+}
+
+/* The inner container for an item */
+.itemBox {
+    -moz-box-align: center;
+    width: 30em;
+    padding-top:    0.75em;
+    padding-bottom: 0.75em;
+}
+
+/* Images in the alerts */
+.image {
+    max-width: 48px;
+}
+
+/* The box for the title + text portion of an item */
+.textBlock {
+    width: 0;
+    -moz-box-flex: 1;
+}
+
+/* The title of an item */
+.title {
+    font-weight: bold;
+}
+
+/* The invisible anchor for the popup to be relative to */
+#anchor {
+    -moz-appearance: none;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}

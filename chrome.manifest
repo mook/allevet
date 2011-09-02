@@ -1,0 +1,5 @@
+#content allevet jar:allevet.jar!/content/
+content allevet content/
+skin allevet classic/1.0 content/
+component {8f390939-5cd0-41cb-adb6-f18a5a5e905e} components/alertsService.js
+contract @mozilla.org/alerts-service;1 {8f390939-5cd0-41cb-adb6-f18a5a5e905e}
