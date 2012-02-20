@@ -9,7 +9,7 @@
         title="(allevet hidden frame)"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-    <panel id="panel" noautohide="true" noautofocus="true">
+    <panel id="panel" noautohide="true" noautofocus="true" level="top">
         <vbox id="container">
             <!-- An item looks like this:
             
